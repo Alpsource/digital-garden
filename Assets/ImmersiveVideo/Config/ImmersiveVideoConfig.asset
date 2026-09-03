@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d90fd9c2d13a249b5dbfd40a5de3a7, type: 3}
+  m_Name: ImmersiveVideoConfig
+  m_EditorClassIdentifier: ImmersiveVideo.Config::ImmersiveVideo.ImmersiveVideoConfig
+  videoClip: {fileID: 32900000, guid: d7a869c7790466a40a2cb5e759481199, type: 3}
+  passthroughHoldSeconds: 3
+  fadeInSeconds: 1
+  fadeInCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fadeOutSeconds: 2
+  fadeOutCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  prepareTimeoutSeconds: 30
+  verboseLogging: 1
+  introMode: 1
+  preScanDelaySeconds: 1.5
+  scanSeconds: 2.5
+  materializeSeconds: 2
+  dissolveSeconds: 1
+  crossfadeOverlapSeconds: 1
+  scanMaxRadius: 4
+  scanCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  revealCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gridColor: {r: 0.6, g: 0.85, b: 1, a: 1}
+  gridScale: 4
+  gridWidth: 0.02
+  scanBandWidth: 0.6
+  revealBandWidth: 1.5
+  sceneRevealYawCalibrationDegrees: -92
+  sceneDataTimeoutSeconds: 5
+  minPlanesForTierB: 3
+  useBoundingBoxes: 1
+  allowProxyRoomFallback: 1
+  proxyRoomSize: {x: 4, y: 2.6, z: 4}
+  buttonDistance: 0.55
+  buttonHeightOffsetDeg: 0
+  buttonDiameter: 0.18
+  buttonRecenterAngle: 35
+  buttonRecenterDelay: 1.5
+  buttonRecenterSmooth: 0.4
+  keepVideoPreparedWhileIdle: 1
+  videoStartYawOffsetDegrees: 30
+  outroMode: 0
+  outroSeconds: 2.5
+  outroCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  passthroughWarmupSeconds: 0.35
+  outroLeadSeconds: 5
+  videoPlayCount: 2
+  loopCrossfadeSeconds: 3
+  replayIntroMode: 0
+  reacquireGeometryEachCycle: 0
+  allowEarlyExit: 1
+  earlyExitHoldSeconds: 0.8

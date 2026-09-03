@@ -1,0 +1,25 @@
+{
+    "name": "ImmersiveVideo.Editor",
+    "rootNamespace": "ImmersiveVideo.Editor",
+    "references": [
+        "Unity.XR.CompositionLayers",
+        "Unity.XR.ARFoundation",
+        "Unity.XR.CoreUtils",
+        "ImmersiveVideo.Runtime",
+        "ImmersiveVideo.Config",
+        "UnityEngine.UI",
+        "Unity.XR.Interaction.Toolkit",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
