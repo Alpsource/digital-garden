@@ -111,13 +111,8 @@ InitTestScene*.unity*
 .idea/
 .claude/
 
-# Working planning/spec docs from development - not meant to be published
+# Local dev-workflow notes - not meant to be published
 /CLAUDE.md
-/TASK-10-scene-scan-reveal-ADDENDUM.md
-/TASK-11-start-button-and-loop-ADDENDUM.md
-/quest3-button-FIX-PLAN.md
-/quest3-button-debug-summary.md
-/quest3-passthrough-360-video-SPEC.md
 
 # 360 video source clips: too large for a plain git repo (GitHub rejects any file over
 # 100MB; the ones used during development were 187MB-1.1GB) and this project intentionally
