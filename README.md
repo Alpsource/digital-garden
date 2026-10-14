@@ -75,9 +75,9 @@ compressed splat data was over 1GB). To try it:
    file, and let it generate the `GaussianSplatAsset` + sidecar `.bytes` files.
 3. Add a `GaussianSplatRenderer` component to a GameObject in `GSTestScene` and assign the
    generated asset.
-4. See `../../package`'s own docs (vendored at
-   `Packages/org.nesnausk.gaussian-splatting/`) for compression format tradeoffs if you want
-   to tune it for standalone-headset performance.
+4. See the [upstream repo's README](https://github.com/aras-p/UnityGaussianSplatting#readme)
+   for compression format tradeoffs if you want to tune it for standalone-headset performance
+   (the copy vendored at `Packages/org.nesnausk.gaussian-splatting/` doesn't include them).
 
 Fair warning, from experience: dense/large outdoor captures are exactly what struggled on
 Quest 3 in the first place — this repo's own `PassThroughVideoScene` pivot exists because of
@@ -173,6 +173,9 @@ Assets/ImmersiveVideo/
                                     reference, disabled in the scene
     XRInputDump.cs                 Dev-build-only diagnostic: dumps every live Input System
                                     device + OpenXR extension list to logcat
+    Spike/FadeSpike.cs             Early throwaway spike that proved the compositor-level
+                                    fade on-device - superseded by CompositionLayerFader
+  Spike/TestEquirect.png           Test texture used by the fade spike's setup command
   Shaders/SceneRevealSurface.shader  Scan-reveal surface material (equirect-samples the
                                       video texture directly, so revealed surfaces show
                                       exactly what the video layer will show once it fades in)
@@ -188,7 +191,8 @@ Packages/org.nesnausk.gaussian-splatting/
                                     without needing the upstream repo alongside it.
 ```
 
-Every `Editor/ImmersiveVideo*Setup.cs` script is a `[MenuItem("ImmersiveVideo/...")]` command
+Every `Editor/ImmersiveVideo*.cs` script (the `*Setup.cs` ones plus
+`ImmersiveVideoInputActionsFix.cs`) is a `[MenuItem("ImmersiveVideo/...")]` command
 (check the Unity menu bar) — they were how the whole scene was actually built, incrementally,
 rather than by hand-editing scene YAML. Re-running one is safe; each checks what already
 exists before creating anything.
