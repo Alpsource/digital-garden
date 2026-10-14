@@ -1,5 +1,7 @@
 # Digital Garden — Quest 3 Passthrough 360° Video
 
+![Digital Garden running on Quest 3: the 360° forest video surrounding the viewer](Docs/garden_demo.gif)
+
 A Meta Quest 3 mixed-reality experience: you stand in your real room (passthrough), a
 world-space **Start** button appears in front of you, and pressing it (controller, hand
 pinch, or just looking at it) smoothly fades a 360° video in over your surroundings —
